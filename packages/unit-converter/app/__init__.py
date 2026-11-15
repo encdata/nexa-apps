@@ -10,14 +10,19 @@ class UnitConverter(tg.NexaApp):
 
     def build(self, activity, parent, context=None):
         self.activity = activity
+        theme = getattr(self, "services", {}).get("theme", {})
+        surface = theme.get("surface", 0xFF202630)
+        content = theme.get("window_content", 0xFF2B3440)
+        text = theme.get("text", 0xFFE8EDF2)
+        muted = theme.get("muted", 0xFF9AA8B5)
         self.root = tg.LinearLayout(activity, parent, vertical=True)
         self.root.setdimensions(tg.View.MATCH_PARENT, tg.View.MATCH_PARENT)
-        self.root.setbackgroundcolor(0xFF202630)
+        self.root.setbackgroundcolor(surface)
 
         title = tg.TextView(activity, "length", self.root)
         title.setdimensions(tg.View.MATCH_PARENT, 40)
         title.settextsize(14)
-        title.settextcolor(0xFF9AA8B5)
+        title.settextcolor(muted)
         title.setgravity(0, 1)
         title.setmargin(10, "left")
 
@@ -26,14 +31,14 @@ class UnitConverter(tg.NexaApp):
         self.value.setdimensions(tg.View.MATCH_PARENT, 48)
         self.value.setmargin(8, "left")
         self.value.setmargin(8, "right")
-        self.value.setbackgroundcolor(0xFF2B3440)
-        self.value.settextcolor(0xFFE8EDF2)
+        self.value.setbackgroundcolor(content)
+        self.value.settextcolor(text)
         self.value.settextsize(18)
 
         self.result = tg.TextView(activity, "1 meter", self.root)
         self.result.setdimensions(tg.View.MATCH_PARENT, 56)
         self.result.settextsize(22)
-        self.result.settextcolor(0xFFE8EDF2)
+        self.result.settextcolor(text)
         self.result.setgravity(1, 1)
 
         self.actions = {}
@@ -46,8 +51,8 @@ class UnitConverter(tg.NexaApp):
             button.setlinearlayoutparams(1)
             button.setmargin(3, "left")
             button.setmargin(3, "right")
-            button.setbackgroundcolor(0xFF2B3440)
-            button.settextcolor(0xFFE8EDF2)
+            button.setbackgroundcolor(content)
+            button.settextcolor(text)
             button.settextsize(14)
             button.setgravity(1, 1)
             button.sendclickevent(True)

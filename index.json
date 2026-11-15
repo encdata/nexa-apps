@@ -8,7 +8,7 @@
       "description": "Convert common length units from a compact desktop window.",
       "api_version": 1,
       "download_url": "https://raw.githubusercontent.com/encdata/nexa-apps/main/packages/nexa-unit-converter-1.0.0.zip",
-      "sha256": "96f5e6008f3ac3202b6ca58a28eb8a0aead270f9d40357629a2491599563f76c"
+      "sha256": "5e6c5e7602cef27f51b9173ef5b0c0a9a4db4ae166bcc75e192d74f4d75be1ad"
     }
   ]
 }
