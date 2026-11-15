@@ -1,0 +1,10 @@
+{
+  "id": "unit-converter",
+  "name": "Unit Converter",
+  "version": "1.0.0",
+  "description": "Convert common length units from a compact desktop window.",
+  "api_version": 1,
+  "entrypoint": "app:APP",
+  "icon": "assets/icon.png",
+  "license": "PolyForm-Shield-1.0.0"
+}
