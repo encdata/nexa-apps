@@ -7,8 +7,13 @@
       "version": "1.0.0",
       "description": "Convert common length units from a compact desktop window.",
       "api_version": 1,
-      "download_url": "https://raw.githubusercontent.com/encdata/nexa-apps/main/packages/nexa-unit-converter-1.0.0.zip",
-      "sha256": "5e6c5e7602cef27f51b9173ef5b0c0a9a4db4ae166bcc75e192d74f4d75be1ad"
+      "package_url": "https://raw.githubusercontent.com/encdata/nexa-apps/main/packages/unit-converter/",
+      "files": {
+        "manifest.json": "7916e5d222c3ef616fbbc0d6bcb211c4d9d2afdf25c5e2774a14da087e9ff420",
+        "LICENSE": "aa26d2b60dfa4350d3a2f412a4cee3334c9fd0ea6081b1a34fbbc300df0f8620",
+        "app/__init__.py": "046f7f146382cb9aef12a6b7528420b7ee8c94cf09f27a667cbd246154e9e3e8",
+        "assets/icon.png": "0f1355dd85c60d67dc6e9a192a43b3c2c3c9ab6e7792e4da0f6ef7c55492174c"
+      }
     }
   ]
 }
